@@ -1,5 +1,7 @@
 ***STEPS***
 
+load docker postgres on your PC
+
 docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=myuser -d -p 5432:5432 postgres
 
 docker exec -it some-postgres psql -U myuser
